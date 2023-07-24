@@ -3,14 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
-}
+
 nav.menu-lateral{
-    width: 300px;
+    width: 50px;
     height: 100%;
     background-color: #202020;
     padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #310015 ;
+    position: fixed;
+    top:0;
+    left: 0;
+    opacity: .2;
+    overflow: hidden;
+    transition: .5s;
+
+}
+nav.menu-lateral:hover{
+    opacity: 1;
+    width: 200px;
+
 }
 .btn-expandir{
     width: 100%;
@@ -25,6 +36,12 @@ ul{
     height: 100%;
     list-style-type: none;
 }
+ul li.item-menu{
+    transition: 1s;
+}
+ul li.item-menu:hover{
+    background-color:#ff0070 ;
+}
 ul li.item-menu a{
     color: #fff;
     text-decoration: none;
@@ -37,55 +54,9 @@ ul li.item-menu a{
 ul li.item-menu a .txt-link{
     margin-left: 40px;
 }
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+}
 
 
-section{
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 
-}
-.texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    text-shadow: 10px 10px 10px brown;
-    background-color: rgb(183, 187, 247);
-}
-section:nth-of-type(1){
-    background-image: url('https://images7.alphacoders.com/460/460295.jpg');
-    height: 600px;
-    background-size: cover;
-    
-}
-section:nth-of-type(3){
-    background-image: url('https://i.pinimg.com/originals/17/cb/3e/17cb3e3f91ba26a2654db26bd5d4fa0f.jpg');
-    height: 600px;
-}
-section:nth-of-type(5){
-    background-image: url('https://img.wallpapic-br.com/i4452-843-827/medium/natureza-por-do-sol-nascer-nuvens-imagem-de-fundo.jpg');
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-}
-section:nth-of-type(7){
-    background-image: url('https://c0.wallpaperflare.com/preview/974/188/7/brazil-goias-chapada-dos-veadeiros-lago.jpg');
-    height: 600px;
-}
-@media screen and (max-width:400px) {
-    .texto{        
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            text-shadow: 10px 10px 10px brown;
-            background-color: rgb(183, 187, 247);
-        
-        
-    }
-}
