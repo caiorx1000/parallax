@@ -12,11 +12,19 @@ section{
     background-attachment: fixed;
 
 }
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-shadow: 10px 10px 10px brown;
+    background-color: rgb(183, 187, 247);
+}
 section:nth-of-type(1){
     background-image: url('https://images7.alphacoders.com/460/460295.jpg');
     height: 600px;
     background-size: cover;
-    bacground-position: center;
+    
 }
 section:nth-of-type(3){
     background-image: url('https://i.pinimg.com/originals/17/cb/3e/17cb3e3f91ba26a2654db26bd5d4fa0f.jpg');
@@ -31,4 +39,17 @@ section:nth-of-type(5){
 section:nth-of-type(7){
     background-image: url('https://c0.wallpaperflare.com/preview/974/188/7/brazil-goias-chapada-dos-veadeiros-lago.jpg');
     height: 600px;
+}
+@media screen and (max-width:400px) {
+    .texto{        
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            text-shadow: 10px 10px 10px brown;
+            background-color: rgb(183, 187, 247);
+        
+        
+    }
 }
