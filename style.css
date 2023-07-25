@@ -82,7 +82,7 @@ ul li.item-menu a .icon > i {
     cursor: pointer;
     transition: background-color 0.5s;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -126,12 +126,26 @@ ul li.item-menu a .icon > i {
     border-radius: 50%;
     border: 0;
     
-    color: #fff;
+    color: #941616;
     font-size: 20px;
     cursor: pointer;
-    
-    
+}
 
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+
+
+}
+
+.abrir .modal{
+    animation: abrirmodal 0.4s;
 }
 
 
