@@ -3,9 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url('https://w0.peakpx.com/wallpaper/32/446/HD-wallpaper-the-lion-king-2019.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 1200px;
+}
 
 nav.menu-lateral{
-    width: 50px;
+    width: 70px;
     height: 100%;
     background-color: #202020;
     padding: 40px 0 40px 1%;
@@ -13,19 +20,20 @@ nav.menu-lateral{
     position: fixed;
     top:0;
     left: 0;
-    opacity: .2;
+    opacity: .5;
     overflow: hidden;
     transition: .5s;
 
 }
 nav.menu-lateral:hover{
-    opacity: 1;
-    width: 200px;
+    opacity: .8;
+    width: 250px;
 
 }
 .btn-expandir{
+    margin-left: 20px;
     width: 100%;
-    padding-left: 10px;
+   
 }
 .btn-expandir > i{
     color: #fff;
